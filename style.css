@@ -32,6 +32,10 @@ body {
     font-size: 20px;
 }
 
+.header-text {
+    color: var(--gray);
+}
+
 .soon-text {
     font-weight: 700;
 }
@@ -40,12 +44,18 @@ body {
     font-size: 14px;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
 .form-input {
     border-radius: 50px;
     border: 1px solid var(--pale-blue);
     margin-bottom: 10px;
     padding: 10px 40px;
     color: var(--gray);
+    width: 100%;
 }
 
 .form-btn {
@@ -56,6 +66,8 @@ body {
     padding: 10px;
     color: #fff;
     font-weight: 600;
+    width: 100%;
+    box-shadow: 5px 5px 15px var(--pale-blue);
 }
 
 .dashboard-img {
@@ -63,8 +75,60 @@ body {
     margin-top: 60px;
 }
 
-@media (min-width: 1280px) {
+.icons {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.fa-facebook-f {
+    padding: 5px 8px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 0.5px solid var(--pale-blue);
+    color: var(--blue);
+}
+
+.fa-twitter {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 0.5px solid var(--pale-blue);
+    color: var(--blue);
+}
+
+.fa-instagram {
+    padding: 5px 7px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 0.5px solid var(--pale-blue);
+    color: var(--blue);
+}
+
+.copyright {
+    font-size: 10px;
+    color: var(--gray);
+}
+
+@media (min-width: 1000px) {
     .w-75 {
         max-width: 50%;
+    }
+
+    .launch-text {
+        font-size: 40px;
+    }
+
+    .form {
+        flex-direction: row;
+    }
+
+    .form-input {
+        width: 60%;
+        margin-right: 5%;
+        margin-bottom: 0;
+    }
+
+    .form-btn {
+        width: 30%;
     }
 }
