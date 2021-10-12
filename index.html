@@ -35,9 +35,14 @@
             <p class="subscribe-text">
                 Subscribe and get notified
             </p>
-            <form class="form align-items-center" action="">
-                <input class="form-input" type="text" placeholder="Your email address...">
-                <button class="form-btn">Notify Me</button>
+            <form class="form align-items-center needs-validation" action="" novalidate>
+                <div class="form-input-feedback">
+                    <input class="form-input form-control" type="text" placeholder="Your email address..." required>
+                    <div class="invalid-feedback">
+                        <em>Please provide a valid email address</em>
+                    </div>
+                </div>
+                <button class="form-btn" type="submit">Notify Me</button>
             </form>
         </header>
         <section class="dashboard">
@@ -59,7 +64,9 @@
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Graham</a>.
         </p>
     </footer>
+    <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -47,12 +47,17 @@ body {
 .form {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.form-input-feedback {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .form-input {
     border-radius: 50px;
     border: 1px solid var(--pale-blue);
-    margin-bottom: 10px;
     padding: 10px 40px;
     color: var(--gray);
     width: 100%;
@@ -68,6 +73,10 @@ body {
     font-weight: 600;
     width: 100%;
     box-shadow: 5px 5px 15px var(--pale-blue);
+}
+
+.form-btn:hover {
+    background-color: var(--pale-blue);
 }
 
 .dashboard-img {
@@ -88,6 +97,12 @@ body {
     color: var(--blue);
 }
 
+.fa-facebook-f:hover {
+    color: #fff;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
 .fa-twitter {
     padding: 5px;
     margin: 5px;
@@ -96,12 +111,24 @@ body {
     color: var(--blue);
 }
 
+.fa-twitter:hover {
+    color: #fff;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
 .fa-instagram {
     padding: 5px 7px;
     margin: 5px;
     border-radius: 50%;
     border: 0.5px solid var(--pale-blue);
     color: var(--blue);
+}
+
+.fa-instagram:hover {
+    color: #fff;
+    background-color: var(--blue);
+    cursor: pointer;
 }
 
 .copyright {
@@ -113,21 +140,29 @@ body {
     .w-75 {
         max-width: 50%;
     }
-
     .launch-text {
         font-size: 40px;
     }
-
     .form {
         flex-direction: row;
     }
-
-    .form-input {
+    .form-input-feedback {
+        display: flex;
+        flex-direction: column;
         width: 60%;
         margin-right: 5%;
         margin-bottom: 0;
     }
-
+    .invalid-feedback {
+        position: absolute;
+        left: -20%;
+        top: 50px;
+    }
+    .form-input {
+        width: 100%;
+        margin-right: 5%;
+        margin-bottom: 0;
+    }
     .form-btn {
         width: 30%;
     }
