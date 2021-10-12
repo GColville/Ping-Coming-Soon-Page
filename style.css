@@ -28,6 +28,10 @@ body {
     margin-bottom: 35px;
 }
 
+.full-stop {
+    color: var(--blue);
+}
+
 .launch-text {
     font-size: 20px;
 }
